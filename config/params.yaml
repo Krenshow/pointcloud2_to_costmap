@@ -1,0 +1,50 @@
+# basic params
+global_frame: map
+robot_base_frame: base_scan
+update_frequency: 3.0
+publish_frequency: 1.0
+
+# map
+static_map: false
+rolling_window: true
+width: 14.0
+height: 14.0
+resolution: 0.2
+map_type: costmap
+
+# obstacles
+transform_tolerance: 0.4
+obstacle_range: 7 # after 7 meters there is a huge noise that is bad aqquracy for obstacles shape
+max_obstacle_height: 3.0
+raytrace_range: 1.0
+
+# example of the robot footprint
+footprint: [[-0.325, -0.325], [-0.325, 0.325], [0.325, 0.325], [0.46, 0.0], [0.325, -0.325]]
+footprint_padding: 0.1
+
+# inflation and threshold
+inflation_radius: 0.55
+lethal_cost_threshold: 100
+
+
+# PointCloud2 topics
+observation_sources: human road construction info nature vehicle
+
+human: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_human, marking: true, clearing: true, max_obstacle_height: 2.0, min_obstacle_height: 0.1}
+
+road: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_road, marking: true, clearing: true, max_obstacle_height: 0.2, min_obstacle_height: 0.15}
+
+construction: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_construction, marking: true, clearing: true, max_obstacle_height: 3.0, min_obstacle_height: 0.1}
+
+info: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_info, marking: true, clearing: true, max_obstacle_height: 3.0, min_obstacle_height: 0.1}
+
+nature: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_nature, marking: true, clearing: true, max_obstacle_height: 3.0, min_obstacle_height: 0.1}
+
+vehicle: {sensor_frame: base_scan, data_type: PointCloud2, topic: example_vehicle, marking: true, clearing: true, max_obstacle_height: 3.0, min_obstacle_height: 0.1}
+
+track_unknown_space: true
+
+
+
+
+

@@ -1,0 +1,88 @@
+print: false # print config or not
+
+types:
+  
+  - {name:   road,
+     value:  0,
+     group:  example_road}
+
+  - {name:   sidewalk,
+     value:  1,
+     group:  example_road}
+
+
+  - {name:   building,
+     value:  2,
+     group:  example_construction}
+
+  - {name:   wall,
+     value:  3,
+     group:  example_construction}
+
+  - {name:   fence,
+     value:  4,
+     group:  example_construction}
+
+  - {name:   pole,
+     value:  5,
+     group:  example_construction}
+
+
+  - {name:   traffic_light,
+     value:  6,
+     group:  example_info}
+
+  - {name:   traffic_sign,
+     value:  7,
+     group:  example_info}
+
+
+  - {name:   vegetation,
+     value:  8,
+     group:  example_nature}
+
+  - {name:   terrain,
+     value:  9,
+     group:  example_nature}
+
+  # - {name:   sky,  # DO NOT NEED
+  #    value:  10,
+  #    group:  sky}
+
+  - {name:   human,
+     value:  11,
+     group:  example_human}
+
+  - {name:   rider,
+     value:  12,
+     group:  example_human}
+
+
+  - {name:   car,
+     value:  13,
+     group:  example_vehicle}
+
+  - {name:   truck,
+     value:  14,
+     group:  example_vehicle}
+
+  - {name:   bus,
+     value:  15,
+     group:  example_vehicle}
+
+  - {name:   train,
+     value:  16,
+     group:  example_vehicle}
+     
+  - {name:   motorcycle,
+     value:  17,
+     group:  example_vehicle}
+
+  - {name:   bicycle,
+     value:  18,
+     group:  example_vehicle}
+
+      
+
+
+  
