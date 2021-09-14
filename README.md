@@ -43,7 +43,7 @@ pointcloud2_to_costmap node
 ```
 roslaunch pointcloud2_to_costmap pointcloud2_to_costmap.launch 
 ```
-costmap_2d modul + rviz
+costmap_2d module + rviz
 ```
 roslaunch pointcloud2_to_costmap costmap.launch
 ```
@@ -56,7 +56,7 @@ rosbag play file_name
 
 #### CONFIGURE
 
-To configure the poincloud2_to_costmap node you can edit [config file](config/config.yaml). Also, [params file](config/params.yaml) might be changed to set the costmap layer. You can change observation sources or set other parameters of the [costmap](http://wiki.ros.org/costmap_2d).
+To configure the poincloud2_to_costmap node you can edit [config file](config/config.yaml). Also, [params file](config/params.yaml) might be changed to set the costmap layer. You can change observation sources (choose groups of PointCloud2 you want to see at the costmap) or set other parameters of the [costmap](http://wiki.ros.org/costmap_2d).
 
 #### RVIZ
 
