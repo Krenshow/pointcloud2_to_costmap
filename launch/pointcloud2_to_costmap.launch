@@ -11,8 +11,8 @@
     args="0.0 0.0 0.7 0.0 0.0  0.0 /base_link /base_scan 100" />
 
   <!-- Node launch-->
-  <rosparam file="$(find sb_test)/config/config.yaml" command="load"/>  
+  <rosparam file="$(find pointcloud2_to_costmap)/config/config.yaml" command="load"/>  
   <node pkg="pointcloud2_to_costmap" type="pointcloud2_to_costmap" name="pointcloud2_to_costmap" output="screen" respawn="true" required="false"> 
-  <rosparam file="$(find sb_test)/config/config.yaml" command="load"/>
+  <rosparam file="$(find pointcloud2_to_costmap)/config/config.yaml" command="load"/>
   </node>
 </launch>
