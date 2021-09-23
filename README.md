@@ -4,6 +4,8 @@
 
 This repository contains pointcloud2_to_costmap node that takes PointCloud2 and decomposes it to classes related to [Class Definitions](https://www.cityscapes-dataset.com/dataset-overview/). Then, each group is sent to its own PointCloud2 topic for the costmap layer ([costmap_2d](https://github.com/ros-planning/navigation/tree/noetic-devel/costmap_2d)).
 
+![test](https://user-images.githubusercontent.com/29725931/134464525-d1a0e4dd-ad29-49eb-8ee1-e777a898e375.gif)
+
 You can configure the segmentation of data to several groups in the _config file_. The number of groups and their composition might be chosen on behalf of the task and related to the data consumer. There is a [_config file_](config/config.yaml) structure example:
 
 ```
